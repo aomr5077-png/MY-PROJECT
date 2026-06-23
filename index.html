@@ -2,30 +2,100 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>وحش البرمجة لتطوير الويب</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omar Gaming Setup Empire 2027</title>
+<style>
+body {
+ background-color: #0b0c10;
+ background-image: 
+ linear-gradient(rgba(102,252,241,0.05) 1px, transparent 1px),
+ linear-gradient(90deg, regba(102,252,241,0.05) 1px, transparent 1px);
+ background-size: 30px 30px;
+ color: #c5c6c7; 
+ font-family: 'segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ margin: 0;
+ padding: 0;
+ font-size: 20px;
+ }
+.blueprint-arrow {
+text-align: center;
+color: #66fcf1;
+font-size: 24px;
+margin: 15px 0;
+font-weight: bold;
+text-shadow: 0 0 8px #66fcf1;
+}
+.method-box {
+background: rgba(31, 40, 51, 0.85);
+border: 2px dashed #45f3ff;
+border-radius: 8px;
+padding: 10px;
+margin: 10px 0;
+font-family: 'Courier New' , Courier, monospace;
+font-size: 14px;
+color: #00ffcc;
+}
+</style>
 </head>
-<body style="background-color: #1114; color: #ffffff; font-family: sans-serif; text-align: center;>
-
- <h1 style="color:#00ffcc;font-size:36px;margin-top:50px;>امبراطورية عمر لتطوير صفحات الهبوط</h1>
-<p style="font-size: 18px; color: #b3b3b3;">نصمم ونبرمج مواقع جيمنج وصفحات هبوط حارقه و سريعه لزيادة مبيعاتك</p>
+</body>
+<div class="container">
+<h1>Omar Ultimate Gaming Setup Builder </h1>
+</h1>
+<p style="font-size: 20px; color: #95a5a6; text-align: center;">The Smarter System To Customize and Calculate Your Dream PC</p>
 <br>
-<hr style="border: 1px solid #00ffcc; width: 60%;">
+<div class="method-box"> Method: addPart(partName, partPrice) -> Updates totalCost and appends item.</div>
+<div class"blueprint-arrow">⬇ INPUT TO SYSTEM ⬇</div>
+<h2> class="section-title">1️⃣ Choose Your Processor (CPU)</h2>
+<div class="grid">
+<div class="card">
+<h3>Intel Core i9-14900K</h3>
+<p>the ultimate CPU for rendering and coding.</p>
+<div class="price">600$</div>
+<button class="btn" onclick="addPart"(’Intel i9’, 600)>Add To Receipt ➕</button>
+</div>
+<div class="card">
+<h3>AMD Ryzen 9 7950X</h3>
+<p>The multitasking monster wiyh supreme stability.</p>
+<div class="price">550$</div>
+<button class="btn" onclick="addPart"(’Ryzen 9’‚ 550)">Add To Receipt ➕</button>
+</div></div>
+<h2 class="section-title">2️⃣ Choose Your Graphics Card (GPU)</h2>
+<div class="grid">
+<div class="card">
+<h3>NIVIDIA RTX 4090 24GB</h3>
+<p>The king of 4k resolution and AI generation.</p>
+<div  class="price">1600$</div>
+<button class="btn" onclick="addPart('RTX 4090', 1600)">Add to Receipt ➕</button>
+</div>
+<div class="card">
+<h3>NIVIDIA RTX 4080 SUPER</h3>
+<p>Overlocked beast built perfectly for live streaming and content creation.</p>
+<div class="price"1000$</div>
+<button class="btn" Onclick="addPart"('RTX 4080, 1000')">Add To Receipt ➕</button>
+</div>
+</div>
+<h2h2 class="section-title">3️⃣Choose Your Monitor</h2>
+<div class="grid">
+<div class="card">
+<h3>ASUS ROG Swift 32" OLED</h3>
+<cinematic OLED colors with response time built for pro esports players.</p>
+<div class="price">900$</div>
+<buton class="btn" Onclick="addPart"('ASUS OLED,'900)">Add To Receipt➕</buton>
+</div>
+</div>
+<!-- The System Calculator Dashboard -->
+<div class="System-panel">
+<h2 style="margin-top:0; color:#66fcf1;font-size:24px; text-align:center;">Omar PC simulator Live Receipt</h2>
+<div class="Receipt-list" id="Receipt">
+<p id="empty-msg" style="text-align:center; color:#777; margin:10px 0;">Your cart is empty. click buttons above to build your system!</p>
+</div>
+<div class="total-box">
+Total Price: <span id="total-cost">0</span>$
+</div>
 <br>
-<h2 style="color: #ff007f;">لماذا تختارنا لتصميم موقعك؟</h2>
-<p style="font-size: 16px;">اكواد HTML5وCSS3 نظيفة وسريعة 100%100</p>
-<p style="font-size: 16px;">تصميم متجاوب يفتح على الموبايل والكمبيىتر بمنتهى الشياكة</p>
-<p style="font-size: 16px;">الوان نيون جيمنج فخمه(DARK MODE)مريحة للعين</p>
-<br>
-<hr style="border: 1px solid #ff007f; width: 40%;">
-<br>
-<h3 style="color: #00ffcc;">هل انت جاهز لنقل عملك للمستوى التالي؟</h3>
-<br>
-<a href="https://wa.me" target="_blank">
-<button style="background-color: #25D366; color: white;padding: 15px 35px; font-size: 18px; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; box-shadow:0px 4px 20px rgba(37,211,102,0.5);">
-اطلب تصميم موقعك الان عبر الواتساب
-</button>
-</a>
+<button class="btn" style="background-color:  #ff007f; color: white;"onclick="clearsetup()">Reset system and Rebuild</button>
+</div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
-
-
